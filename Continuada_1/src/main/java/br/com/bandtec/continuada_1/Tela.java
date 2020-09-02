@@ -69,6 +69,24 @@ public class Tela extends javax.swing.JFrame {
         lblDisco.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lblDisco.setText("Disco");
 
+        lblMaxCpu.setText("%");
+
+        lblMaxDisco.setText("%");
+
+        lblMaxMemoria.setText("%");
+
+        lblMedCpu.setText("%");
+
+        lblMedDisco.setText("%");
+
+        lblMedMemoria.setText("%");
+
+        lblMinCpu.setText("%");
+
+        lblMinMemoria.setText("%");
+
+        lblMinDisco.setText("%");
+
         btnMonitoramento.setBackground(new java.awt.Color(51, 51, 255));
         btnMonitoramento.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         btnMonitoramento.setText("Monitorar Hardware");
@@ -93,39 +111,44 @@ public class Tela extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(50, 50, 50)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnMonitoramento, javax.swing.GroupLayout.DEFAULT_SIZE, 494, Short.MAX_VALUE)
-                    .addComponent(lblTitulo)
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(pbCpu, javax.swing.GroupLayout.PREFERRED_SIZE, 414, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblCpu))
-                        .addGap(10, 10, 10)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblMaxCpu)
-                            .addComponent(lblMedCpu)
-                            .addComponent(lblMinCpu)))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(lblMemoria)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblMaxMemoria))
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(pbMemoria, javax.swing.GroupLayout.PREFERRED_SIZE, 414, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(10, 10, 10)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(lblMinMemoria)
-                                .addComponent(lblMedMemoria))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(pbDisco, javax.swing.GroupLayout.PREFERRED_SIZE, 414, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblDisco))
-                        .addGap(10, 10, 10)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblMaxDisco)
-                            .addComponent(lblMedDisco)
-                            .addComponent(lblMinDisco)))
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(lblTitulo)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(pbCpu, javax.swing.GroupLayout.PREFERRED_SIZE, 414, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblCpu))
+                                .addGap(10, 10, 10)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblMaxCpu)
+                                    .addComponent(lblMedCpu)
+                                    .addComponent(lblMinCpu)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(pbDisco, javax.swing.GroupLayout.PREFERRED_SIZE, 414, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblDisco))
+                                .addGap(10, 10, 10)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblMaxDisco)
+                                    .addComponent(lblMedDisco)
+                                    .addComponent(lblMinDisco)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(pbMemoria, javax.swing.GroupLayout.PREFERRED_SIZE, 414, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblMemoria))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(10, 10, 10)
+                                        .addComponent(lblMaxMemoria, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(10, 10, 10)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(lblMinMemoria, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(lblMedMemoria, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)))
                 .addContainerGap(50, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -146,7 +169,7 @@ public class Tela extends javax.swing.JFrame {
                     .addComponent(lblMedCpu))
                 .addGap(15, 15, 15)
                 .addComponent(lblMinCpu)
-                .addGap(52, 52, 52)
+                .addGap(50, 50, 50)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblDisco)
                     .addComponent(lblMaxDisco))
@@ -156,25 +179,25 @@ public class Tela extends javax.swing.JFrame {
                     .addComponent(lblMedDisco))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(104, 104, 104)
+                        .addGap(50, 50, 50)
                         .addComponent(lblMemoria)
                         .addGap(15, 15, 15))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(15, 15, 15)
                         .addComponent(lblMinDisco)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(lblMaxMemoria)
+                        .addComponent(lblMaxMemoria, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(15, 15, 15)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(pbMemoria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblMedMemoria))
+                    .addComponent(lblMedMemoria, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15)
-                .addComponent(lblMinMemoria)
-                .addGap(60, 60, 60)
+                .addComponent(lblMinMemoria, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(46, 46, 46)
                 .addComponent(btnMonitoramento, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(20, 20, 20)
                 .addComponent(jButton1)
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addContainerGap(33, Short.MAX_VALUE))
         );
 
         pack();
@@ -184,38 +207,40 @@ public class Tela extends javax.swing.JFrame {
     Integer aleatorioMaxDisco = 75;
     Integer aleatorioMaxMemoria = 10;
     
-    Integer valorMaxCpu = -1;
-    Integer valorMedCpu = -1;
-    Integer valorMinCpu = -1;
     
-    Integer valorMaxDisco = -1;
-    Integer valorMedDisco = -1;
-    Integer valorMinDisco = -1;
+    Integer valorMaxCpu;
+    Double valorMedCpu;
+    Integer valorMinCpu;
+    Double  valorTotalCpu = 0.0;
     
-    Integer valorMaxMemoria = -1;
-    Integer valorMedMemoria = -1;
-    Integer valorMinMemoria = -1;
+    Integer valorMaxDisco;
+    Double valorMedDisco;
+    Integer valorMinDisco;
+    Double  valorTotalDisco = 0.0;
     
-    Random aleatorioCpu = new Random();
-    Random aleatorioDisco = new Random();
-    Random aleatorioMemoria = new Random();
-
-
+    Integer valorMaxMemoria;
+    Double valorMedMemoria;
+    Integer valorMinMemoria;
+    Double  valorTotalMemoria = 0.0;
+    
+    Random aleatorio = new Random();
+    
+    Integer vezes = 0;
+    
     private void btnMonitoramentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMonitoramentoActionPerformed
+        vezes ++;
+  
+       
         
-        Integer valorAleatorioCpu = aleatorioCpu.nextInt(aleatorioMaxCpu + 1);
-        Integer valorAleatorioDisco = aleatorioCpu.nextInt(aleatorioMaxDisco + 1);
-        Integer valorAleatorioMemoria = aleatorioCpu.nextInt(aleatorioMaxMemoria + 1);
-        
-        
+        Integer valorAleatorioCpu = aleatorio.nextInt(aleatorioMaxCpu + 1);
         pbCpu.setValue(valorAleatorioCpu);
-        pbDisco.setValue(valorAleatorioDisco);
-        pbMemoria.setValue(valorAleatorioMemoria);
-        
-        
-        if (valorMinCpu == -1) {
+        if (valorMinCpu == null && valorMaxCpu == null && valorMedCpu == null) {
             lblMinCpu.setText(String.format("%d", valorAleatorioCpu) + "%");
+            lblMedCpu.setText(String.format("%d", valorAleatorioCpu) + "%");
+            lblMaxCpu.setText(String.format("%d", valorAleatorioCpu) + "%");
             valorMinCpu = valorAleatorioCpu;
+            valorMedCpu = Double.valueOf(valorAleatorioCpu);
+            valorMaxCpu = valorAleatorioCpu;
         }
         if (valorAleatorioCpu > valorMaxCpu) {
             valorMaxCpu = valorAleatorioCpu;
@@ -225,14 +250,20 @@ public class Tela extends javax.swing.JFrame {
             valorMinCpu = valorAleatorioCpu;
             lblMinCpu.setText(String.format("%d", valorMinCpu) + "%");
         }
-        valorMedCpu = (valorMaxCpu + valorMinCpu)/2;
-        lblMedCpu.setText(String.format("%d", valorMedCpu) + "%");
-
+        valorTotalCpu += valorAleatorioCpu;
+        valorMedCpu = valorTotalCpu/vezes;
+        lblMedCpu.setText(String.format("%.1f", valorMedCpu) + "%");
         
-        
-        if (valorMinDisco == -1) {
+       
+        Integer valorAleatorioDisco = aleatorio.nextInt(aleatorioMaxDisco + 1);
+        pbDisco.setValue(valorAleatorioDisco);
+        if (valorMinDisco == null && valorMaxDisco == null && valorMedDisco == null) {
             lblMinDisco.setText(String.format("%d", valorAleatorioDisco) + "%");
+            lblMedDisco.setText(String.format("%d", valorAleatorioDisco) + "%");
+            lblMaxDisco.setText(String.format("%d", valorAleatorioDisco) + "%");
             valorMinDisco = valorAleatorioDisco;
+            valorMedDisco = Double.valueOf(valorAleatorioDisco) ;
+            valorMaxDisco = valorAleatorioDisco;
         }
         if (valorAleatorioDisco > valorMaxDisco) {
             valorMaxDisco = valorAleatorioDisco;
@@ -242,14 +273,20 @@ public class Tela extends javax.swing.JFrame {
             valorMinDisco = valorAleatorioDisco;
             lblMinDisco.setText(String.format("%d", valorMinDisco) + "%");
         }
-        valorMedDisco = (valorMaxDisco + valorMinDisco)/2;
-        lblMedDisco.setText(String.format("%d", valorMedDisco) + "%");
+        valorTotalDisco += valorAleatorioDisco;
+        valorMedDisco = valorTotalDisco/vezes;
+        lblMedDisco.setText(String.format("%.1f", valorMedDisco) + "%");
+        
 
-        
-        
-        if (valorMinMemoria == -1) {
+        Integer valorAleatorioMemoria = aleatorio.nextInt(aleatorioMaxMemoria + 1);
+        pbMemoria.setValue(valorAleatorioMemoria);
+        if (valorMinMemoria == null && valorMaxMemoria == null && valorMedMemoria == null) {
             lblMinMemoria.setText(String.format("%d", valorAleatorioMemoria) + "%");
+            lblMedMemoria.setText(String.format("%d", valorAleatorioMemoria) + "%");
+            lblMaxMemoria.setText(String.format("%d", valorAleatorioMemoria) + "%");
             valorMinMemoria = valorAleatorioMemoria;
+            valorMedMemoria = Double.valueOf(valorAleatorioMemoria) ;
+            valorMaxMemoria = valorAleatorioMemoria;
         }
         if (valorAleatorioMemoria > valorMaxMemoria) {
             valorMaxMemoria = valorAleatorioMemoria;
@@ -259,33 +296,33 @@ public class Tela extends javax.swing.JFrame {
             valorMinMemoria = valorAleatorioMemoria;
             lblMinMemoria.setText(String.format("%d", valorMinMemoria) + "%");
         }
-        valorMedMemoria = (valorMaxMemoria + valorMinMemoria)/2;
-        lblMedMemoria.setText(String.format("%d", valorMedMemoria) + "%");
+        valorTotalMemoria += valorAleatorioMemoria;
+        valorMedMemoria = valorTotalMemoria/vezes;
+        lblMedMemoria.setText(String.format("%.1f", valorMedMemoria) + "%");
 
-        
         
     }//GEN-LAST:event_btnMonitoramentoActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        valorMaxCpu = -1;
-        valorMedCpu = -1;
-        valorMinCpu = -1;
+        valorMaxCpu = null;
+        valorMedCpu = null;
+        valorMinCpu = null;
         lblMaxCpu.setText("");
         lblMedCpu.setText("");
         lblMinCpu.setText("");
         pbCpu.setValue(0);
 
-        valorMaxDisco = -1;
-        valorMedDisco = -1;
-        valorMinDisco = -1;
+        valorMaxDisco = null;
+        valorMedDisco = null;
+        valorMinDisco = null;
         lblMaxDisco.setText("");
         lblMedDisco.setText("");
         lblMinDisco.setText("");
         pbDisco.setValue(0);
         
-        valorMaxMemoria = -1;
-        valorMedMemoria = -1;
-        valorMinMemoria = -1;
+        valorMaxMemoria = null;
+        valorMedMemoria = null;
+        valorMinMemoria = null;
         lblMaxMemoria.setText("");
         lblMedMemoria.setText("");
         lblMinMemoria.setText("");
